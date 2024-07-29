@@ -10,7 +10,6 @@ import { Web3Button, useOwnedNFTs, useTokenBalance, useContract, useContractRead
 import SendDataButton from '../components/SendDataButton';
 import StakeNFTCard from '../components/stake-nft1155-card';
 import StakedNFTCard from '../components/staked-nft1155-card';
-import GameFrame from "../components/GameFrame"; // Import the GameFrame component
 import Link from 'next/link'; // Import Link from Next.js
 
 
@@ -177,7 +176,7 @@ useEffect(() => {
               <div className={styles.cardContainer}>
                 {stakedERC1155Tokens && stakedERC1155Tokens.length > 0 ? (
                   stakedERC1155Tokens[0].map((stakedNFT: BigNumber, index: number) => (
-                    <StakedNFTCard sec_key={data_key} tokenId={stakedNFT.toNumber()} />
+                    <StakedNFTCard key={stakedNFT.toNumber()} sec_key={data_key} tokenId={stakedNFT.toNumber()} />
                   ))
                 ) : (
                   <p>No NFTs staked</p>
