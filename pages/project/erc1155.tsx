@@ -45,7 +45,8 @@ export default function ERC1155Project() {
                         <p>Claim an ERC1155 NFT for 10 tokens</p>
                         <Web3Button
                             contractAddress={ERC1155_CONTRACT_ADDRESS}
-                            action={(contract) => contract.erc1155.claim(0, 1)}
+                            action={(contract) => contract.erc1155.claim(2, 1)}
+                            // second number in brackets is the quantity
                         >Claim NFT</Web3Button>
                     </div>
                     <div className={styles.componentCard}>
@@ -64,6 +65,7 @@ export default function ERC1155Project() {
                         {ownedNFTsIsLoading ? "Loading..." : (
                             ownedNFTs?.map((nft) => (
                                 <p key={nft.metadata.id}>TokenID#{nft.metadata.id} Owned: {nft.quantityOwned}</p>
+                                
                             ))
                         )}
                     </div>

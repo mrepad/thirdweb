@@ -13,7 +13,7 @@ export default function Navbar() {
                         fontSize: '1.2 rem',
                         fontWeight: 'bold'
                     }}>
-                    Scott&apos;s Portfolio
+                    <img src="/Blokkade.png" alt="CrypSaur Logo" className={styles.logo} />
                 </p>
             </Link>
             <ConnectWallet 

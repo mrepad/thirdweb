@@ -1,0 +1,52 @@
+{
+  "dataPass": "Default message",
+  "sec_key": "Default message",
+  "connectionStatus": "connected",
+  "address": "0xD3e3D2216c51C49E9edbDC2873eDb94D147f49E8",
+  "AvNFTs": [
+    {
+      "AvId": "0",
+      "quantityOwned": "7"
+    },
+    {
+      "AvId": "1",
+      "quantityOwned": "2"
+    },
+    {
+      "AvId": "2",
+      "quantityOwned": "4"
+    },
+    {
+      "AvId": "3",
+      "quantityOwned": "1"
+    },
+    {
+      "AvId": "4",
+      "quantityOwned": "1"
+    },
+    {
+      "AvId": "5",
+      "quantityOwned": "2"
+    },
+    {
+      "AvId": "6",
+      "quantityOwned": "2"
+    }
+  ],
+  "tokenBalance": "827376.859833333333433429",
+  "stakedNFTs": [
+    {
+      "stakedId": "2",
+      "quantityOwned": "1"
+    },
+    {
+      "stakedId": "0",
+      "quantityOwned": "1"
+    },
+    {
+      "stakedId": "5",
+      "quantityOwned": "1"
+    }
+  ],
+  "rewardBalance": "1734.569333333333333332"
+}

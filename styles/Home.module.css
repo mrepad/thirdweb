@@ -1,3 +1,20 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 2rem;
+  background-image: url('/Futuristic-Neon.jpg'); /* Ensure the path is correct */
+  background-size: cover;
+  background-position: center;
+}
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem; /* Add gap between items */
+}
+
 .container {
   width: 100%;
   max-width: 1440px;
@@ -123,6 +140,8 @@
 .logo {
   height: 1em;
   margin-left: 0.5rem;
+  width: 450px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
 }
 
 @media (max-width: 768px) {
@@ -194,7 +213,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 32%;
+  width: 95%;
   background-color: #111;
   border-radius: 8px;
   padding: 1rem;
