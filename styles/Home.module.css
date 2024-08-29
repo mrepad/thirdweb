@@ -4,7 +4,7 @@
   align-items: center;
   min-height: 100vh;
   padding: 0 2rem;
-  background-image: url('/Futuristic-Neon.jpg'); /* Ensure the path is correct */
+  
   background-size: cover;
   background-position: center;
 }
@@ -144,6 +144,8 @@
   height: auto; /* Maintain aspect ratio */
 }
 
+
+
 @media (max-width: 768px) {
   .header {
     margin-left: 0;
@@ -166,16 +168,7 @@
   filter: invert(1);
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  margin: 0 auto;
-  width: 100%;
-  height: 84px;
-  max-width: 1440px;
-}
+
 
 .loadingText {
   font-size: 2rem;
@@ -214,8 +207,9 @@
   justify-content: flex-start;
   align-items: flex-start;
   width: 95%;
-  background-color: #111;
-  border-radius: 8px;
+  background-color: #203841; /* Fill color */
+  border: 4px solid #0DEFFF; /* Thicker border color */
+  border-radius: 15px; /* Rounded corners */
   padding: 1rem;
   cursor: pointer;
   margin-top: 20px;
@@ -227,4 +221,60 @@
   border: none;
   border-radius: 8px;
   margin-right: 10px;
+}
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 5px;
+  margin: 0 auto;
+  width: 100%;
+  height: 84px;
+  max-width: 1440px;
+}
+
+.logoContainer {
+  position: relative;
+  top: -10px;
+  left: 0px;
+  padding: 1px;
+}
+
+.buttonContainer {
+  position: relative;
+  top: -30px;
+  display: flex;
+  flex-direction: row; /* Arrange buttons in a row */
+  gap: 5px; /* Space between buttons */
+  align-items: center; /* Align buttons vertically centered */
+  margin-bottom: 10px; /* Adds space below the buttons */
+}
+
+.customButton {
+  padding: 5px 10px;
+  font-size: 1rem;
+  color: white;
+  
+  background-color: #203841; /* Fill color */
+  border: 4px solid #0DEFFF; /* Thicker border color */
+  border-radius: 15px; /* Rounded corners */
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+
+.customButton:hover {
+  color: #0DEFFF; /* Change text color on hover */
+}
+
+.connectWalletContainer {
+  position: absolute;
+  top: 20px; /* Adjusts the top position */
+  right: 30px; /* Adjusts the right position */
 }

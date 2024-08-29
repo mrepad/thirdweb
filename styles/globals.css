@@ -20,3 +20,22 @@ body {
   color: #e7e8e8;
   background: #070707;
 }
+
+
+
+body, html, #__next {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.background {
+  background-image: url('/Background5.jpg');
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

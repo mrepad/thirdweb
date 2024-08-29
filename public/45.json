@@ -1,5 +1,5 @@
 {
-  "sec_key": "gg341",
+  "sec_key": "45",
   "connectionStatus": "connected",
   "address": "0xD3e3D2216c51C49E9edbDC2873eDb94D147f49E8",
   "AvNFTs": [
@@ -32,11 +32,11 @@
       "quantityOwned": "2"
     }
   ],
+  "rewardBalance": "2075.225833333333333333",
   "tokenBalance": "827376.859833333333433429",
-  "rewardBalance": "2080.153333333333333333",
   "stakedNFTs": [
     {
-      "stakedId": "2",
+      "stakedId": "5",
       "quantityOwned": "1"
     },
     {
@@ -44,7 +44,7 @@
       "quantityOwned": "1"
     },
     {
-      "stakedId": "5",
+      "stakedId": "2",
       "quantityOwned": "1"
     }
   ]

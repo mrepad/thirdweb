@@ -73,23 +73,8 @@ export default function ERC20Project() {
             <p>---</p>
             <p>---</p>
             <div className={styles.grid}>
-                <div className={styles.componentCard}>
-                    <h3>Token Stats </h3>
-                    {tokenSupplyIsLoading ? (
-                        <p>Loading supply...</p>
-                    ) : (
-                        <p>Sec Key: {sec_key} - Total supply: {tokenSupply?.displayValue} {tokenSupply?.symbol}</p>
-                    )}
-                </div>
-                <div className={styles.componentCard}>
-                    <h3>Stake Blokkade Coins & Claim Rewards </h3>
-                    {tokenSupplyIsLoading ? (
-                        <p>Loading supply...</p>
-                    ) : (
-                        <p>Sec Key: {sec_key} - Total supply: {tokenSupply?.displayValue} {tokenSupply?.symbol}</p>
-                    )}
-                </div>
-                <div className={styles.componentCard}>
+                
+            <div className={styles.componentCard}>
                     <h3>Token Balance</h3>    
                     {tokenBalanceIsLoading ? (
                         <p>Loading balance...</p>
@@ -101,6 +86,16 @@ export default function ERC20Project() {
                         action={(contract) => contract.erc20.burn(10)}   
                     >Burn 10 Tokens</Web3Button>*/}
                 </div>
+
+                <div className={styles.componentCard}>
+                    <h3>Stake Blokkade Coins & Claim Rewards </h3>
+                    {tokenSupplyIsLoading ? (
+                        <p>Loading supply...</p>
+                    ) : (
+                        <p>Sec Key: {sec_key} - Total supply: {tokenSupply?.displayValue} {tokenSupply?.symbol}</p>
+                    )}
+                </div>
+                
                 <div className={styles.componentCard}>
                     <h3>Earn Tokens</h3>
                     <p>Earn more tokens by staking an ERC721 NFT</p>                  
